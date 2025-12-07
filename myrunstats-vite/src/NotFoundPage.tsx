@@ -2,7 +2,7 @@ import { Link } from "react-router-dom" // Import Link from react-router-dom to 
 
 function NotFoundPage() {
   return (
-    <div className="bg-[rgb(51,51,51)] text-white text-center w-screen h-screen flex flex-col items-center justify-center gap-14">
+    <div className="bg-[rgb(51,51,51)] text-white text-center h-screen flex flex-col items-center justify-center gap-14">
         <h1 className="text-4xl md:text-6xl font-bold mx-4">
            <u className="decoration-[rgb(128,20,20)]">Error404</u> | You ran off the track!
         </h1>
