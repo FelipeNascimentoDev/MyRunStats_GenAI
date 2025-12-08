@@ -15,7 +15,7 @@ function TopMenu() {
             <Link className="p-2" to="/myruns">my_runs</Link>
           </li>
           <li className="mx-3 hover:text-[rgb(50,255,170)]">
-            <Link className="p-2" to="/progress-tracker">analysis</Link>
+            <Link className="p-2" to="/progress-tracker">tracker</Link>
           </li>
           <li className="mx-3 hover:text-[rgb(50,255,170)]">
             <Link className="p-2" to="https://github.com/FelipeNascimentoDev/MyRunStats_GenAI" target="_blank">about</Link>
