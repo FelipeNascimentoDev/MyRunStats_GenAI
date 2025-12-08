@@ -6,7 +6,7 @@ function TopMenu() {
     <>
     <header className="flex justify-between items-center bg-white p-4">
       <div className="mx-2 md:mx-6">
-          <img className="h-9 w-9" src="../speed_favicon.png" alt="Speed Icon"/>
+          <Link to="/"><img className="h-9 w-9" src="../speed_favicon.png" alt="Speed Icon"/></Link>
       </div>
 
       <nav>
