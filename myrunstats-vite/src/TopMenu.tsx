@@ -12,7 +12,7 @@ function TopMenu() {
       <nav>
         <ul className="flex text-black font-bold content-center">
           <li className="mx-3 hover:text-[rgb(50,255,170)]">
-            <Link className="p-2" to="/myruns">my_runs</Link>
+            <Link className="p-2" to="/">upload-photo</Link>
           </li>
           <li className="mx-3 hover:text-[rgb(50,255,170)]">
             <Link className="p-2" to="/progress-tracker">tracker</Link>
