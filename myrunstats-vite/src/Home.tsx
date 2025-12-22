@@ -1,31 +1,31 @@
-import { useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
-import React from 'react';
+import { useRef } from 'react'
+import { useNavigate } from 'react-router-dom'
+import React from 'react'
 
 function Home() {
 
-  const fileInputRef = useRef<HTMLInputElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null)
 
-  const navigate = useNavigate();
+  const navigate = useNavigate()
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0]; // Get the first selected file, like a photo
+    const file = e.target.files?.[0] // Get the first selected file, like a photo
 
     if (file) {
-      const reader = new FileReader();
+      const reader = new FileReader()
       reader.onload = () => { 
-        const base64Image = reader.result as string; 
-        navigate('/progress-tracker', { state: { imageData: base64Image } });
+        const base64Image = reader.result as string 
+        navigate('/progress-tracker', { state: { imageData: base64Image } })
       }
-      reader.readAsDataURL(file); // Read the file as a base64-encoded string and trigger 'onload' function
+      reader.readAsDataURL(file) // Read the file as a base64-encoded string and trigger 'onload' function
     }
   }
 
 
   // Trigger the file input click event and '?' check for nullability
   const handleButtonClick = () => {
-    fileInputRef.current?.click();
-  };
+    fileInputRef.current?.click()
+  }
 
   return (
     <>
@@ -46,7 +46,7 @@ function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-10 mx-12">
           <input type="file" id="fileInput" ref={fileInputRef} className="hidden"
           onChange={(e) => {
-            handleFileUpload(e as React.ChangeEvent<HTMLInputElement>);
+            handleFileUpload(e as React.ChangeEvent<HTMLInputElement>)
           }}
           />
           <button onClick={handleButtonClick} className="
